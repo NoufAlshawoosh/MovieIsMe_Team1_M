@@ -43,6 +43,66 @@ struct SignInView: View {
                         .foregroundColor(.white.opacity(0.8))
                     
                 }
+                
+                .frame(maxWidth: .infinity,alignment: .leading)
+                .padding(.horizontal, 30)
+                Spacer().frame(height: 30)
+                
+                VStack(alignment: .leading, spacing: 10) {
+                    
+                    Text("Email")
+                        .font(.system(size: 18, weight: .medium))
+                        .foregroundColor(.white.opacity(0.8))
+
+                    TextField("Enter your email", text: $email)
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(Color.white.opacity(0.15))
+                        )
+                        .foregroundColor(.white)
+                        .tint(.white)
+                }
+                .frame(maxWidth: .infinity,alignment: .leading)
+                .padding(.horizontal, 30)
+                Spacer().frame(height: 10)
+                VStack(alignment: .leading, spacing: 10) {
+                    
+                    Text("Password")
+                        .font(.system(size: 18 , weight: .medium))
+                        .foregroundColor(.white.opacity(0.7))
+                    
+                    SecureField("Enter your password", text: $password)
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(Color.white.opacity(0.15))
+                        )
+                        .foregroundColor(.white)
+                        .tint(.white)
+                }.frame(maxWidth: .infinity,alignment: .leading)
+                    .padding(.horizontal, 30)
+                
+                Spacer().frame(height: 30)
+                
+                VStack{
+                    NavigationLink {
+                        MovieCenterView()
+                    } label: {
+                        Text("Sign in")
+                            .font(.system(size: 20, weight: .semibold))
+                            .foregroundColor(.black)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .cornerRadius(14)
+                            .background(
+                                RoundedRectangle(cornerRadius: 14)
+                                    .fill(Color.white.opacity(0.9))
+                            )
+                    }
+
+                }.frame(maxWidth: .infinity,alignment: .leading)
+                    .padding(.horizontal, 30)
             }
         }
     }
