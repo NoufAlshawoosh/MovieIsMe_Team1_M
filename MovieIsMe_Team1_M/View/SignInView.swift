@@ -3,11 +3,6 @@
 //  MovieIsMe_Team1_M
 //
 //  Created by Nedaa on 25/12/2025.
-
-//
-//  SignInView.swift
-//
-//  Created by Nedaa on 24/12/2025.
 //
 import SwiftUI
 #Preview {
