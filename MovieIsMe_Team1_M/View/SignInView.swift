@@ -30,7 +30,20 @@ struct SignInView: View {
                         endPoint: .top
                     )
                 )
-          
+            VStack(alignment: .leading, spacing: 1){
+                VStack(alignment: .leading, spacing: 20) {
+                    Spacer().frame(height: 300)
+                    //Spacer()
+                    Text("Sign In")
+                        .font(.system(size: 40, weight: .bold))
+                        .foregroundColor(.white)
+                    
+                    Text("You'll find what you're looking for in the\n ocean of movies")
+                        .font(.system(size: 18, weight: .medium))
+                        .foregroundColor(.white.opacity(0.8))
+                    
+                }
+            }
         }
     }
 }
