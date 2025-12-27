@@ -13,7 +13,8 @@ struct MovieCenterView: View {
             
             Text("هلا")
                 .font(.system(size: 28, weight: .bold))
-                .foregroundColor(.white)
+                .foregroundColor(.black)
+                .background()
         }
     }
 }

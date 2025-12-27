@@ -5,9 +5,9 @@
 //  Created by Nedaa on 25/12/2025.
 //
 import SwiftUI
-#Preview {
+#Preview {NavigationStack {
     SignInView()
-}
+}}
 struct SignInView: View {
     @State private var email: String = ""
     @State private var password: String = ""
@@ -25,6 +25,7 @@ struct SignInView: View {
                         endPoint: .top
                     )
                 )
+            
             VStack(alignment: .leading, spacing: 1){
                 VStack(alignment: .leading, spacing: 20) {
                     Spacer().frame(height: 300)
