@@ -17,8 +17,20 @@ struct MovieCenterView: View {
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
+                        //هنا لصفة وسن تكملها
+                        Spacer()
+                        NavigationLink(destination: ProfileView()) {
+                            Image("p")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 40, height: 40)
+                                .clipShape(Circle())
+                        }
+                    }
+                    .padding(.horizontal)
+             
                         
-                        Spacer()}}} .background(Color.black.edgesIgnoringSafeArea(.all))}}
+                    }} .background(Color.black.edgesIgnoringSafeArea(.all))}}
 }
 
 #Preview {
