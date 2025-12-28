@@ -28,7 +28,18 @@ struct MovieCenterView: View {
                         }
                     }
                     .padding(.horizontal)
-             
+                    HStack {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(.gray)
+                        Text("Search for Movie name, actors...")
+                            .foregroundColor(.gray)
+                        Spacer()
+                    }
+                    .padding()
+                    .background(Color.gray.opacity(0.2))
+                    .cornerRadius(10)
+                    .padding(.horizontal)
+                    
                         
                     }} .background(Color.black.edgesIgnoringSafeArea(.all))}}
 }
