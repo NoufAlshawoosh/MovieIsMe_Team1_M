@@ -73,43 +73,85 @@ struct MovieCenterView: View {
                         .padding(.horizontal)
                     }
                     //صفحات نوف
-                       VStack(alignment: .leading, spacing: 10) {
-                           HStack {
-                               Text("Drama")
-                                   .font(.title2)
-                                   .fontWeight(.bold)
-                                   .foregroundColor(.white)
-                               
-                               Spacer()
-                               
-                               Text("Show more")
-                                   .foregroundColor(.yellow)
-                           }
-                           .padding(.horizontal)
+                    VStack(alignment: .leading, spacing: 10) {
+                        HStack {
+                            Text("Drama")
+                                .font(.title2)
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
                             
-                           ScrollView(.horizontal, showsIndicators: false) {
-                           HStack(spacing: 15) {
-                           NavigationLink(destination: ProfileView()) {
-                            Image("d1")
-                            .resizable()
-                            .scaledToFill()
-                          .frame(width: 200, height: 280)
-                            .clipped()
-                              .cornerRadius(15)
-    }
-                                                           
-                    NavigationLink(destination: ProfileView()) {
-                     Image("d2")
-              .resizable()
-           .scaledToFill()
-                  .frame(width: 200, height: 280)
-                       .clipped()
-                         .cornerRadius(15)
-}}
-                      .padding(.horizontal) }
-                                               }
+                            Spacer()
+                            
+                            Text("Show more")
+                                .foregroundColor(.yellow)
+                        }
+                        .padding(.horizontal)
                         
-                    }} .background(Color.black.edgesIgnoringSafeArea(.all))}}
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 15) {
+                                NavigationLink(destination: ProfileView()) {
+                                    Image("d1")
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 200, height: 280)
+                                        .clipped()
+                                        .cornerRadius(15)
+                                }
+                                
+                                NavigationLink(destination: ProfileView()) {
+                                    Image("d2")
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 200, height: 280)
+                                        .clipped()
+                                        .cornerRadius(15)
+                                }}
+                            .padding(.horizontal) }
+                    }
+                    
+                    
+                    VStack(alignment: .leading, spacing: 10) {
+                        HStack {
+                            Text("Comedy")
+                                .font(.title2)
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                            
+                            Spacer()
+                            
+                            Text("Show more")
+                                .foregroundColor(.yellow)
+                        }
+                        .padding(.horizontal)
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 15) {
+                                NavigationLink(destination: ProfileView()) {
+                                    Image("c1")
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 200, height: 280)
+                                        .clipped()
+                                        .cornerRadius(15)
+                                    
+                                    Image("c2")
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 200, height: 280)
+                                        .clipped()
+                                    .cornerRadius(15)}
+                            }
+                            .padding(.horizontal)
+                        }
+                    }
+                    
+                    
+                } .padding(.vertical)
+                
+            }
+            
+            
+            .background(Color.black.edgesIgnoringSafeArea(.all))}}
 }
 
 #Preview {
