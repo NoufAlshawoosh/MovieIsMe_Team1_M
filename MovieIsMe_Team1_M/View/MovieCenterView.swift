@@ -39,7 +39,39 @@ struct MovieCenterView: View {
                     .background(Color.gray.opacity(0.2))
                     .cornerRadius(10)
                     .padding(.horizontal)
-                    
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("High Rated")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(.horizontal)
+                        
+                        TabView {
+                            Image("top")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(height: 450)
+                                .clipped()
+                                .cornerRadius(15)
+                            
+                            Image("top")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(height: 450)
+                                .clipped()
+                                .cornerRadius(15)
+                            Image("top")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(height: 450)
+                                .clipped()
+                                .cornerRadius(15)
+                            
+                        }
+                        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                        .frame(height: 450)
+                        .padding(.horizontal)
+                    }
                         
                     }} .background(Color.black.edgesIgnoringSafeArea(.all))}}
 }
