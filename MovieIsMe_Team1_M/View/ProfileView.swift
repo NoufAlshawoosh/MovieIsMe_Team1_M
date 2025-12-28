@@ -62,35 +62,14 @@ struct ProfileView: View {
 
                     Spacer()
 
-                    // Empty State (مثل الصورة)
-                    if !viewModel.hasSavedMovies {
-                        VStack(spacing: 14) {
-                            Image(systemName: "rectangle.on.rectangle.angled")
-                                .font(.system(size: 48, weight: .regular))
-                                .foregroundColor(.white.opacity(0.18))
-
-                            Text("No saved movies yet , start save\nyour favourites")
-                                .font(.system(size: 14, weight: .regular))
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(.white.opacity(0.25))
-                        }
-                        .frame(maxWidth: .infinity)
-                        .padding(.bottom, 30)
-                    } else {
-                        // لو عندك أفلام محفوظة لاحقًا
-                        VStack(alignment: .leading, spacing: 10) {
-                            ForEach(viewModel.savedMovies) { movie in
-                                Text(movie.title)
-                                    .foregroundColor(.white)
-                            }
-                        }
-                    }
+//
+//
 
                     Spacer()
                 }
                 .padding(.horizontal, 18)
             }
-            // (Back + yellow) مثل تصميم iOS
+            
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack(spacing: 6) {
@@ -259,7 +238,7 @@ private struct AvatarView: View {
                 .fill(Color.white.opacity(0.14))
                 .frame(width: size, height: size)
 
-            Text("👩🏻")
+            Text("")
                 .font(.system(size: size * 0.55))
                 .opacity(isDimmed ? 0.35 : 1.0)
         }
