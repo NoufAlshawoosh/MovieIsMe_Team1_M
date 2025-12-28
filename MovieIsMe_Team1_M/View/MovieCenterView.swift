@@ -72,6 +72,42 @@ struct MovieCenterView: View {
                         .frame(height: 450)
                         .padding(.horizontal)
                     }
+                    //صفحات نوف
+                       VStack(alignment: .leading, spacing: 10) {
+                           HStack {
+                               Text("Drama")
+                                   .font(.title2)
+                                   .fontWeight(.bold)
+                                   .foregroundColor(.white)
+                               
+                               Spacer()
+                               
+                               Text("Show more")
+                                   .foregroundColor(.yellow)
+                           }
+                           .padding(.horizontal)
+                            
+                           ScrollView(.horizontal, showsIndicators: false) {
+                           HStack(spacing: 15) {
+                           NavigationLink(destination: ProfileView()) {
+                            Image("d1")
+                            .resizable()
+                            .scaledToFill()
+                          .frame(width: 200, height: 280)
+                            .clipped()
+                              .cornerRadius(15)
+    }
+                                                           
+                    NavigationLink(destination: ProfileView()) {
+                     Image("d2")
+              .resizable()
+           .scaledToFill()
+                  .frame(width: 200, height: 280)
+                       .clipped()
+                         .cornerRadius(15)
+}}
+                      .padding(.horizontal) }
+                                               }
                         
                     }} .background(Color.black.edgesIgnoringSafeArea(.all))}}
 }
