@@ -11,7 +11,8 @@ import SwiftUI
 struct MovieIsMe_Team1_MApp: App {
     var body: some Scene {
         WindowGroup {
-            SignInView()
+           // SignInView()
+            TryView()
         }
     }
 }
