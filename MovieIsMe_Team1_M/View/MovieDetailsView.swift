@@ -87,7 +87,7 @@ struct MovieDetails: View {
                         Text("2 hours 22 mins")
                             .font(.system(size: 15))
                             .fontWeight(.medium)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.gray)
                         
                     }
                     
@@ -104,7 +104,7 @@ struct MovieDetails: View {
                         Text("English")
                             .font(.system(size: 15))
                             .fontWeight(.medium)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.gray)
                         
                     }
                 }
@@ -123,7 +123,7 @@ struct MovieDetails: View {
                     Text("Drama")
                         .font(.system(size: 15))
                         .fontWeight(.medium)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(.gray)
                     
                 }
                 
@@ -140,7 +140,7 @@ struct MovieDetails: View {
                     Text("+15")
                         .font(.system(size: 15))
                         .fontWeight(.medium)
-                        .foregroundStyle(.white)
+                        .foregroundStyle(.gray)
                     
                     
                 } // end of VStack
