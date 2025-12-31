@@ -12,7 +12,7 @@ struct MovieIsMe_Team1_MApp: App {
     var body: some Scene {
         WindowGroup {
            // SignInView()
-            TryView()
+            MovieDetailsView()
         }
     }
 }
