@@ -147,7 +147,7 @@ struct MovieCenterView: View {
                     
                     
                 } .padding(.vertical)
-                
+             //llllll
             }
             
             
